@@ -1,0 +1,3 @@
+{
+    "phpcs.standard": "../vendor/newfold-labs/wp-php-standards/Newfold"
+}

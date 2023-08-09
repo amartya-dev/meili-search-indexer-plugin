@@ -1,0 +1,67 @@
+{
+  "name": "amartya-dev/meili-search-indexer-plugin",
+  "description": "A wordpress plugin to automatically add articles to meili index as we upload them to wordpress",
+  "type": "wordpress-plugin",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "authors": [
+    {
+      "name": "Amartya Gaur"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MeiliSearchIndexer\\": "inc/"
+    },
+    "files": [
+      "bootstrap.php",
+      "meili-search-indexer-plugin.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4"
+    },
+    "platform-check": false,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "php-http/discovery": true
+    },
+    "preferred-install": {
+      "newfold-labs/*": "source",
+      "*": "dist"
+    }
+  },
+  "repositories": {
+    "newfold": {
+      "type": "composer",
+      "url": "https://newfold-labs.github.io/satis/",
+      "only": [
+        "newfold-labs/*"
+      ]
+    }
+  },
+  "scripts": {
+    "fix": "vendor/bin/phpcbf --standard=phpcs.xml .",
+    "lint": "vendor/bin/phpcs --standard=phpcs.xml -s ."
+  },
+  "scripts-descriptions": {
+    "fix": "Automatically fix coding standards issues where possible.",
+    "lint": "Check files against coding standards.",
+    "i18n": "Generate a .pot file for translation."
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "newfold-labs/wp-php-standards": "^1.2",
+    "wp-cli/i18n-command": "^2.4.3",
+    "wp-phpunit/wp-phpunit": "^6.2"
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.7",
+    "http-interop/http-factory-guzzle": "^1.0",
+    "meilisearch/meilisearch-php": "^1.3"
+  }
+}

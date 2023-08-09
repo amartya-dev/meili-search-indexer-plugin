@@ -42,9 +42,7 @@ class PostRecordsProvider extends WpRecordsProvider {
 		$menu_order        = absint( $post->menu_order );
 
 		$record = array(
-			'objectID'          => (string) $post->ID,
-			'post_id'           => $post->ID,
-			'ID'                => $post->ID,
+			'id'                => $post->ID,
 			'post_author'       => $user_data,
 			'post_date'         => $post_date,
 			'post_date_gmt'     => $post_date_gmt,
@@ -65,7 +63,6 @@ class PostRecordsProvider extends WpRecordsProvider {
 			'comment_status'    => $comment_status,
 			'ping_status'       => $ping_status,
 			'menu_order'        => $menu_order,
-			'guid'              => $post->guid,
 		);
 
 		// Retrieve featured image.

@@ -1,14 +1,11 @@
 <?php
 
-namespace MeiliSearchIndexer;
-
-use MeiliSearchIndexer\Index\Index;
-use MeiliSearchIndexer\Index\Repository;
+namespace MeiliSearchIndexer\Index;
 
 /**
  * An in memory index repository to prevent duplicate indices and other utils
  */
-class IndexRepository implements Repository {
+class MeiliSearchIndexRepository implements Repository {
 	/**
 	 * The list of indices currently active
 	 *

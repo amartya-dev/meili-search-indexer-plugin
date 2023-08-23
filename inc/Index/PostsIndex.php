@@ -1,11 +1,8 @@
 <?php
 
-namespace MeiliSearchIndexer;
+namespace MeiliSearchIndexer\Index;
 
 use Meilisearch\Client;
-use MeiliSearchIndexer\Index\WpRecordsProvider;
-use MeiliSearchIndexer\Index\Index;
-use MeiliSearchIndexer\Index\RecordsProvider;
 
 /**
  * Ability to interact with the meilisearch index

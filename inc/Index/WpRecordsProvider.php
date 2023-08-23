@@ -1,8 +1,6 @@
 <?php
 namespace MeiliSearchIndexer\Index;
 
-use MeiliSearchIndexer\Index\RecordsProvider;
-
 /**
  * Abstract class implementing the provider interface
  */

@@ -2,7 +2,7 @@
 
 namespace MeiliSearchIndexer\Posts;
 
-use MeiliSearchIndexer\PostsIndex;
+use MeiliSearchIndexer\Index\PostsIndex;
 
 /**
  * Listen to post changes and update the index accordingly

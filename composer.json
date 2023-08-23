@@ -13,11 +13,7 @@
   "autoload": {
     "psr-4": {
       "MeiliSearchIndexer\\": "inc/"
-    },
-    "files": [
-      "bootstrap.php",
-      "meili-search-indexer-plugin.php"
-    ]
+    }
   },
   "config": {
     "optimize-autoloader": true,
